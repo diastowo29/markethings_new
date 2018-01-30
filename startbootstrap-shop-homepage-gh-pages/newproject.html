@@ -77,15 +77,24 @@
           <div id="carouselExampleIndicators" class="carousel slide my-4">
             
             <div align="center">
-              <label style="font-size: 20px"><b>Upload Gambar</b></label>
-              <br>
-              <input type="file" id="myFile">
-              <br><br>
+              <span class="btn btn-default btn-file">
+                  Browse <input type="file">
+              </span>
             </div>
             <div>
-              <form>
-                Title &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input type="text" name="Title">
-                <br><br>
+              <form class="form-inline">
+                <div class="col-md-12 form-group">
+                    <label class="col-md-3" for="inputEmail">Email</label>
+                    <input type="email" class="col-md-5 form-control" id="inputEmail" placeholder="Email">
+                </div>
+                <div class="col-md-12 form-group">
+                    <label class="col-md-3" for="inputPassword">Password</label>
+                    <input type="password" class="col-md-5 form-control" id="inputPassword" placeholder="Password">
+                </div>
+                <div class="col-md-12 form-group">
+                  <label class="col-md-3" for="pwd">Description</label>
+                  <input type="password" class="col-md-5 form-control" id="pwd" placeholder="Description">
+                </div>
                 Description &nbsp;  &nbsp;  &nbsp;  &nbsp; <input type="text" name="Description">
                 <br><br>
                 Quantity &nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;  &nbsp; <input type="text" name="Quantity">
@@ -153,8 +162,8 @@
                     <a href="#">Download</a><br>
                     <a href="#">Select</a>
                   </h4>
-                  <!-- <h5>$24.99</h5>
-                  <!-- <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                   <h5>$24.99</h5>
+                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
                 </div>
                 <div class="card-footer">
                   <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
