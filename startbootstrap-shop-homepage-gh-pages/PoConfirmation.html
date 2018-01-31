@@ -25,7 +25,6 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <img src="http://www.fraud-magazine.com/uploadedImages/Fraud_Magazine/Content/Articles/2016/brainstorming.jpg" alt="Mountain View" width="50" height="37">
         <a class="navbar-brand" href="#">LOGO Markethings</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -63,8 +62,12 @@
         <div class="col-lg-3">
 
           <h1 class="my-4">Markethings</h1>
+          <div>
+           <input type="button" class="btn btn-info col-md-5" value="Home" onclick="location.href = 'index.html';">
+           <input type="button" class="btn btn-info col-md-6" value="Notifications" onclick="location.href = '#';">
+          </div>
+          <br>
           <div class="list-group">
-            <a href="index.html" class="list-group-item">Home</a>
             <a href="newproject.html" class="list-group-item">New Project</a>
             <a href="index.html" class="list-group-item">Project</a>
             <a href="poconfirmation.html" class="list-group-item">PO Confirmation</a>
@@ -112,7 +115,7 @@
 
           <div class="row">
 
-            <div class="col-lg-4 col-md-6 mb-4">
+            <!-- div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-75">
                 <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
                 <div class="card-body">
@@ -121,93 +124,90 @@
                     <a href="#">Detail</a><br>
                     <a href="#">Complaint</a>
                   </h4>
-                  <!-- <h5>$24.99</h5> -->
-                  <!-- <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p> -->
-                </div>
-               <!--  <div class="card-footer">
-                  <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                </div> -->
-              </div>
-            </div>
-
-           <!--  <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-75">
-                <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                <div class="card-body">
-                  <h4 class="card-title">
-                    <a href="#">Download</a><br>
-                    <a href="#">Select</a>
-                  
-                </div>
-                <div class="card-footer">
-                  <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
                 </div>
               </div>
             </div> -->
 
-          <!--   <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-75">
-                <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                <div class="card-body">
-                  <h4 class="card-title">
-                    <a href="#">Download</a><br>
-                    <a href="#">Select</a>
-                   
-                </div>
-                <div class="card-footer">
-                  <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                </div>
-              </div>
+            <div>
+              <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_TV_2015.png" class="img-thumbnail" alt="Cinque Terre" width="152" height="119"></a>
+              <button type="button" class="btn btn-primary btn-block btn-sm">Download</button>
+              <button data-toggle="modal" data-target="#myModal"  type="button" class="btn btn-primary btn-block btn-sm">Detail</button>
+              <button data-toggle="modal" data-target="#gaModal" type="button" class="btn btn-primary btn-block btn-sm">Complain</button>
             </div>
- -->
-            <!-- <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                <div class="card-body">
-                  <h4 class="card-title">
-                    <a href="#">Item Four</a>
-                  </h4>
-                  <h5>$24.99</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-                </div>
-                <div class="card-footer">
-                  <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                </div>
-              </div>
+ <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body" style="text-align: center;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_TV_2015.png" class="img-rounded" alt="Cinque Terre" width="152" height="119"> 
+        </div>
+        <form class="form-inline">
+          <h6>
+           <div class="col-md-12 form-group">
+                  <label class="col-md-5" for="inputPassword">PIC</label>
+                  <input type="text" class="col-md-7 form-control" id="inputPassword" placeholder="PIC">
             </div>
-
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                <div class="card-body">
-                  <h4 class="card-title">
-                    <a href="#">Item Five</a>
-                  </h4>
-                  <h5>$24.99</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
-                </div>
-                <div class="card-footer">
-                  <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                </div>
-              </div>
+            <div class="col-md-12 form-group">
+                  <label class="col-md-5" for="inputPassword">Phone Number</label>
+                  <input type="text" class="col-md-7 form-control" id="inputPassword" placeholder="Phone Number">
             </div>
+            <div class="col-md-12 form-group">
+                  <label class="col-md-5" for="inputPassword">Email</label>
+                  <input type="text" class="col-md-7 form-control" id="inputPassword" placeholder="Email">
+            </div>
+            <div class="col-md-12 form-group">
+                  <label class="col-md-5" for="inputPassword">Delivery</label>
+                  <input type="text" class="col-md-7 form-control" id="inputPassword" placeholder="Condition">
+            </div>
+        </form>
+        <br>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                <div class="card-body">
-                  <h4 class="card-title">
-                    <a href="#">Item Six</a>
-                  </h4>
-                  <h5>$24.99</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+  <div class="modal fade" id="gaModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body" style="text-align: center;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_TV_2015.png" class="img-rounded" alt="Cinque Terre" width="152" height="119"> 
+        </div>
+        <form class="form-inline">
+          <h6>
+           <div class="col-md-12 form-group">
+                  <label class="col-md-5" for="inputPassword">Title</label>
+                  <input type="text" class="col-md-7 form-control" id="inputPassword" placeholder="Title">
+            </div>
+            <br>
+            <div class="col-md-12 form-group">
+                  <label class="col-md-5" for="inputPassword">Description</label>
+                  <input style="height: 150px" type="text" class="col-md-7 form-control" id="inputPassword" placeholder="Description">
+            </div>
+            <br>
+            <div class="col-md-12" style="text-align: center;"> 
+                  <input type="button" class="btn btn-info" value="Submit">
                 </div>
-                <div class="card-footer">
-                  <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                </div>
-              </div>
-            </div> -->
-
+        </form>
+        <br>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
           </div>
           <!-- /.row -->
 

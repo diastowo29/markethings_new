@@ -25,7 +25,6 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <img src="#" alt="Mountain View" width="50" height="37">
         <a class="navbar-brand" href="#">LOGO Markethings</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -63,8 +62,12 @@
         <div class="col-lg-3">
 
           <h1 class="my-4">Markethings</h1>
+          <div>
+           <input type="button" class="btn btn-info col-md-5" value="Home" onclick="location.href = 'index.html';">
+           <input type="button" class="btn btn-info col-md-6" value="Notifications" onclick="location.href = '#';">
+          </div>
+          <br>
           <div class="list-group">
-            <a href="index.html" class="list-group-item">Home</a>
             <a href="newproject.html" class="list-group-item">New Project</a>
             <a href="index.html" class="list-group-item">Project</a>
             <a href="poconfirmation.html" class="list-group-item">PO Confirmation</a>
@@ -110,7 +113,7 @@
             </a>
  -->          </div>
 
-<style>
+<!-- <style>
 table, th, td {
     border: 1px solid black;
 }
@@ -144,7 +147,43 @@ table, th, td {
     <td>#</td>
   </tr>
 
-</table>
+</table> -->
+<div class="container">         
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Project Code</th>
+        <th>Title</th>
+        <th>Status</th>
+        <th>Action from Supplier</th>
+        <th>Confirm Complete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>Approved</td>
+        <td>#</td>
+        <td>#</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>Pending</td>
+        <td>#</td>
+        <td>#</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>Approve</td>
+        <td>#</td>
+        <td>#</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
            <!--  <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-75">

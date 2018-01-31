@@ -23,7 +23,6 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <img src="#" alt="Mountain View" width="50" height="37">
         <a class="navbar-brand" href="#">LOGO Markethings</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -61,8 +60,12 @@
         <div class="col-lg-3">
 
           <h1 class="my-4">Markethings</h1>
+          <div>
+           <input type="button" class="btn btn-info col-md-5" value="Home" onclick="location.href = 'index.html';">
+           <input type="button" class="btn btn-info col-md-6" value="Notifications" onclick="location.href = '#';">
+          </div>
+          <br>
           <div class="list-group">
-            <a href="index.html" class="list-group-item">Home</a>
             <a href="newproject.html" class="list-group-item">New Project</a>
             <a href="index.html" class="list-group-item">Project</a>
             <a href="poconfirmation.html" class="list-group-item">PO Confirmation</a>
@@ -79,51 +82,51 @@
             
             <div align="center">
               <span class="btn btn-default btn-file">
-                  Browse <input type="file">
+                  Upload Gambar/PDF <input type="file">
               </span>
             </div>
             <div>
               <form class="form-inline">
                 <div class="col-md-12 form-group">
-                    <label class="col-md-3" for="inputEmail">Email</label>
-                    <input type="email" class="col-md-5 form-control" id="inputEmail" placeholder="Email">
-                </div>
-                <div class="col-md-12 form-group">
-                    <label class="col-md-3" for="inputPassword">Password</label>
-                    <input type="password" class="col-md-5 form-control" id="inputPassword" placeholder="Password">
+                  <label class="col-md-3" for="inputPassword">Title</label>
+                  <input type="text" class="col-md-5 form-control" id="inputPassword" placeholder="Title">
                 </div>
                 <div class="col-md-12 form-group">
                   <label class="col-md-3" for="pwd">Description</label>
-                  <input type="password" class="col-md-5 form-control" id="pwd" placeholder="Description">
+                  <input type="text" class="col-md-5 form-control" id="pwd" placeholder="Description">
                 </div>
-                Description &nbsp;  &nbsp;  &nbsp;  &nbsp; <input type="text" name="Description">
-                <br><br>
-                Quantity &nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;  &nbsp; <input type="text" name="Quantity">
-                <br><br>
-                Periode Project &nbsp;&nbsp;  
-                <input type="date" name="start project">
-                <input type="date" name="end project">
-                <br><br>
-                Category &nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;  &nbsp; 
-                <select>
-                <option value="volvo">Select Category</option>
-                <option value="volvo">1</option>
-                <option value="saab">2</option>
-                <option value="opel">3</option>
-                <option value="audi">4</option>
-                </select>
-                <br><br>
-                PIC &nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="PIC">
-                <br><br>
-                Email &nbsp;&nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; <input type="text" name="Email">
-                <br><br>
-                Phone Number &nbsp;&nbsp; <input type="text" name="Phone Number">
-                <br><br>
-                Kode Supplier &nbsp;&nbsp; <input type="text" name="Kode Supplier">
-                <br><br>
-                <input type="submit" value="Submit">
-
-              </form>
+                <div class="col-md-12 form-group">
+                  <label class="col-md-3" for="pwd">Quantity</label>
+                  <input type="text" class="col-md-5 form-control" id="pwd" placeholder="Quantity">
+                </div>
+                 <div class="col-md-12 form-group">
+                  <label class="col-md-3" for="pwd">Periode Project</label>
+                  <input type="text" class="col-md-5 form-control" id="pwd" placeholder="Periode Project">
+                </div>
+                 <div class="col-md-12 form-group">
+                  <label class="col-md-3" for="pwd">Category</label>
+                  <input type="text" class="col-md-5 form-control" id="pwd" placeholder="Category">
+                </div>
+               <div class="col-md-12 form-group">
+                  <label class="col-md-3" for="pwd">PIC</label>
+                  <input type="text" class="col-md-5 form-control" id="pwd" placeholder="PIC">
+                </div>
+                <div class="col-md-12 form-group">
+                  <label class="col-md-3" for="pwd">Email</label>
+                  <input type="text" class="col-md-5 form-control" id="pwd" placeholder="Email">
+                </div>
+                <div class="col-md-12 form-group">
+                  <label class="col-md-3" for="pwd">Phone Number</label>
+                  <input type="text" class="col-md-5 form-control" id="pwd" placeholder="Phone Number">
+                </div>
+                <div class="col-md-12 form-group">
+                  <label class="col-md-3" for="pwd">Kode Supplier</label>
+                  <input type="text" class="col-md-5 form-control" id="pwd" placeholder="Kode Supplier">
+                </div>
+                <div class="col-md-12 text-center"> 
+                  <input align="center" type="button" class="btn btn-info" value="Post Request">
+                </div>
+                </form>
                 
               <!-- </div>  
             <ol class="carousel-indicators">
