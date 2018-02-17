@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Homepage - Markethings</title>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/shop-homepage.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+
+  </head>
+
+  <body ng-app="SAPapp">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">LOGO Markethings</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <img src="images/notif-24.png">
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Profile
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <h1 class="my-4">PT. Terbaiq</h1>
+          <div class="list-group">
+            <a href="#!main" class="list-group-item">Home</a>
+            <a href="#!newproject" class="list-group-item">New Project</a>
+            <a href="#!main" class="list-group-item">Project</a>
+            <a href="#!poconfirmation" class="list-group-item">PO Confirmation</a>
+            <a href="#!complain" class="list-group-item">Complain</a>
+            <a href="#" class="list-group-item">Help Desk</a>
+          </div>
+          <!-- <h4 class="my-4">Kalibata City</h4> -->
+          <!-- <div>
+          </div> -->
+          <br>
+          
+        </div>
+        <div ng-view class="col-lg-9"></div>
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+<!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" aria-label="Close" data-dismiss="modal">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" style="text-align: center;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_TV_2015.png" class="img-rounded" alt="Cinque Terre" width="152" height="119"> 
+        </div>
+        <form class="form-inline">
+          <div class="col-md-12 form-group" style="text-align: center">
+            <label class="col-md-5" for="inputPassword">PIC</label>
+            <input type="text" class="col-md-7 form-control" id="inputPassword" placeholder="PIC">
+          </div>
+          <div class="col-md-12 form-group">
+            <label class="col-md-5" for="inputPassword">Phone Number</label>
+            <input type="text" class="col-md-7 form-control" id="inputPassword" placeholder="Phone Number">
+          </div>
+          <div class="col-md-12 form-group">
+            <label class="col-md-5" for="inputPassword">Email</label>
+            <input type="text" class="col-md-7 form-control" id="inputPassword" placeholder="Email">
+          </div>
+          <div class="col-md-12 form-group">
+            <label class="col-md-5" for="inputPassword">Delivery</label>
+            <input type="text" class="col-md-7 form-control" id="inputPassword" placeholder="Condition">
+          </div>
+          <br>
+          <div class="col-md-12" style="text-align: center;"> 
+            <input type="button" class="btn btn-info" value="Download">
+          </div>
+        </form>
+        <br>
+      </div>
+    </div>
+  </div>
+  <!-- END MODAL -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark" style="margin-top: 20px;">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="sapApp.js"></script>
+
+  </body>
+
+</html>
