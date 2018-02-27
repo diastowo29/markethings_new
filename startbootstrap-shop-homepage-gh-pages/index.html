@@ -63,9 +63,11 @@
             <div align="center">
               <label style="font-size: 30px"><b>List Quotation</b></label>
             </div>
-            <div> 
-              Title Project
-               <button data-toggle="modal" data-target="#cclModal"  type="button" class="btn btn-danger btn-sm">x</button>
+            <div>
+              <strong>Title Project</strong>
+              <!-- <a class="btn btn-large btn-primary" data-toggle="confirmation" data-title="Open Google?"
+   href="https://google.com" target="_blank">Confirmation</a> -->
+               <button style="position: absolute;right: 0;border-radius: 50%;margin: 15px;" data-toggle="modal" data-target="#ysModal"  type="button" class="btn btn-danger btn-sm"><strong>x</strong></button>
                <br>
               Project number
             </div>
@@ -88,10 +90,8 @@
                 <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
                 <div>
                     <button data-toggle="modal" data-target="#myModal"  type="button" class="btn btn-primary btn-block">Download</button>
-                    <button data-toggle="modal" data-target="#myModal"  type="button" class="btn btn-primary btn-block">Select</button>
-                </div>
-                <div>
-                  <button width="200" type="button" class="btn btn-success btn-block">&#9733; &#9733; &#9733; &#9733; &#9733;</button>
+                    <button data-toggle="modal" data-target="#poModal"  type="button" class="btn btn-primary btn-block">Select</button>
+                    <button width="200" type="button" class="btn btn-success btn-block">&#9733; &#9733; &#9733; &#9733; &#9733;</button>
                 </div>
               </div>
             </div>
@@ -100,10 +100,8 @@
                 <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
                 <div>
                     <button data-toggle="modal" data-target="#myModal"  type="button" class="btn btn-primary btn-block">Download</button>
-                    <button data-toggle="modal" data-target="#myModal"  type="button" class="btn btn-primary btn-block">Select</button>
-                </div>
-                <div>
-                  <button width="200" type="button" class="btn btn-success btn-block">&#9733; &#9733; &#9733; &#9733; &#9733;</button>
+                    <button data-toggle="modal" data-target="#poModal"  type="button" class="btn btn-primary btn-block">Select</button>
+                    <button width="200" type="button" class="btn btn-success btn-block">&#9733; &#9733; &#9733; &#9733; &#9733;</button>
                 </div>
               </div>
             </div>
@@ -112,10 +110,8 @@
                 <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
                 <div>
                     <button data-toggle="modal" data-target="#myModal"  type="button" class="btn btn-primary btn-block">Download</button>
-                    <button data-toggle="modal" data-target="#myModal"  type="button" class="btn btn-primary btn-block">Select</button>
-                </div>
-                <div>
-                  <button width="200" type="button" class="btn btn-success btn-block">&#9733; &#9733; &#9733; &#9733; &#9733;</button>
+                    <button data-toggle="modal" data-target="#poModal"  type="button" class="btn btn-primary btn-block">Select</button>
+                    <button width="200" type="button" class="btn btn-success btn-block">&#9733; &#9733; &#9733; &#9733; &#9733;</button>
                 </div>
               </div>
             </div>
@@ -135,6 +131,7 @@
       <!-- Modal content-->
 
       <div class="modal-content">
+        
         <div class="modal-header">
           <button type="button" class="close" aria-label="Close" data-dismiss="modal">
             <span aria-hidden="true">&times;</span>
@@ -161,11 +158,41 @@
             <input type="text" class="col-md-7 form-control" id="inputPassword" placeholder="Condition">
           </div>
           <br>
+          <br>
           <div class="col-md-12" style="text-align: center;"> 
             <input type="button" class="btn btn-info" value="Download">
           </div>
         </form>
         <br>
+      </div>
+    </div>
+  </div>
+  <!-- END MODAL -->
+
+  <!-- Modal -->
+  <div style="max-height: calc(100% - 100px);position: fixed;top: 50%;left: 50%;transform: translate(-50%, -50%);" class="modal fade modal-sm" id="poModal" role="modal-dialog">
+<button style="position: absolute;right: 0px; max-width: 25px;border-radius: 50%; line-height: 25px; height: 25px;top: 10px" data-dismiss="modal" type="button" class="btn btn-primary btn-sm"><h6 style="height: 100%;width: 100%;align-items: center;justify-content: center;display: flex;">X</h6></button>
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+
+      <div class="modal-content">
+        <!-- <button style="position: absolute;right: 0; max-width: 25px;border-radius: 50%; line-height: 25px; height: 25px;" data-dismiss="modal" type="button" class="btn btn-danger btn-sm"><h6>x</h6></button> -->
+        <div class="modal-header" style="background-color: #007bff">
+
+          <label class="col-md-12" style="text-align: center;color: white;"><h5>Upload PO</strong></h5>
+        </div>
+          <div class="modal-body">
+              <div class="form-group" style="text-align: center;">
+        <!-- <label>Upload PO</label><br> -->
+        <input type="file" id="BSbtninfo">
+    </div>
+          </div>
+        <div class="col-md-12" style="text-align: center;">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+          <br>
+          <br>
+        </div>
       </div>
     </div>
   </div>
@@ -178,32 +205,41 @@
       <!-- Modal content-->
 
       <div class="modal-content">
-        <div class="modal-header">
-          <label class="col-md-12" style="text-align: center;font-size: 20px">Cancelation Form</label>
-
-          <!-- <a style="text-align: center;">Enter Reason of Cancelation</a> -->
-          <!-- <button type="button" class="col-md-1 close" aria-label="Close" data-dismiss="modal">
-            <span aria-hidden="true">&times;</span>
-          </button> -->
+        <div class="modal-header" style="background-color: #dc3545">
+          <label class="col-md-12" style="text-align: center;color: white;"><h5>Cancelation Form</strong></h5>
         </div>
-        <!-- <div class="modal-body" style="text-align: center;">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_TV_2015.png" class="img-rounded" alt="Cinque Terre" width="152" height="119"> 
-        </div> -->
         <form class="form-inline">
-          <label class="col-md-12" style="text-align: center;"><b>Enter Reason of Cancelation</b></label>
-          <br><br>
-          <!-- <div class="col-md-12 form-group" style="text-align: center"></div> -->
-          <div class="col-md-12 form-group">
-                  
-                  <textarea style="min-width: 100%" type="text" class="form-control" rows="7" placeholder="Enter Reason of Cancelation"></textarea>
-            </div>
+          <div class="modal-body col-md-12 form-group">
+          <textarea style="min-width: 100%" type="text" class="form-control" rows="7" placeholder="Enter Reason of Cancelation"></textarea>
+          </div>
         </form>
-        <br>
-        <div class="modal-footer"></div>
+        <div class="col-md-12" style="text-align: center;">
+          <button type="button" class="btn btn-primary">Submit</button>
+          <br>
+          <br>
+        </div>
       </div>
     </div>
   </div>
   <!-- END MODAL -->
+
+  <!-- Modal -->
+  <div style="max-height: calc(100% - 100px);position: fixed;top: 50%;left: 50%;transform: translate(-50%, -50%);" class="modal fade modal-sm" id="ysModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6>Are you sure cancel this project?</h6>
+        </div>
+        <div class="modal-footer col-md-12">
+           <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+                <button class="btn btn-danger btn-primary" data-target="#cclModal" data-toggle="modal" data-dismiss="modal" >Yes</button>
+        </div>
+    </div>
+  </div>
+</div>
 
     <!-- Footer -->
     <footer class="py-5 bg-dark" style="margin-top: 20px;">
@@ -218,7 +254,13 @@
     <script src="vendor/tambah/js/jquery-3.3.1.min.js"></script>
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap-confirmation.js"></script>
+    <script src="https://raw.githubusercontent.com/mistic100/Bootstrap-Confirmation/master/bootstrap-confirmation.min.js"></script>
+<script type="text/javascript">
+  $('[data-toggle=confirmation]').confirmation({
+  rootSelector: '[data-toggle=confirmation]',
+  // other options
+});
+</script>
 
 
   </body>
